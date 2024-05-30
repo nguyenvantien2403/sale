@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  sales:
+    image: ${DOCKER_REGISTRY-}sales
+    build:
+      context: .
+      dockerfile: Sales\Dockerfile
